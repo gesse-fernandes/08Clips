@@ -43,7 +43,9 @@ class HomeWidget extends StatelessWidget {
       child: Container(
         height: 300,
         width: 300,
-        child: ClipOval(
+        //ClipOval
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(20),
           child: Image.network(
             "https://avatars.githubusercontent.com/u/43449666?v=4",
             fit: BoxFit.cover,
